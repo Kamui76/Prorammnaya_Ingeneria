@@ -28,7 +28,7 @@
 
 
 2.1. Установка
-![alt text](http://url/to/img.png](https://github.com/Kamui76/Prorammnaya_Ingeneria/blob/%D0%A2%D0%B5%D0%BC%D0%B0_1/Pictures/%D0%A0%D0%B8%D1%81%D1%83%D0%BD%D0%BE%D0%BA1.png)
+![alt text]([http://url/to/img.png](https://github.com/Kamui76/Prorammnaya_Ingeneria/blob/%D0%A2%D0%B5%D0%BC%D0%B0_1/Pictures/%D0%A0%D0%B8%D1%81%D1%83%D0%BD%D0%BE%D0%BA1.png))
 2.2. Настройка
  
 2.3. Создание нового репозитория
