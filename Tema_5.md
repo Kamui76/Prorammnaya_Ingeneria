@@ -26,8 +26,11 @@
 1) Друзья предложили вам поиграть в игру “найди отличия и убери повторения (версия для программистов)”. Суть игры состоит в том, что на вход программы поступает два множества, а ваша задача вывести все элементы первого, которых нет во втором. А вы как раз недавно прошли множества и знаете их возможности, поэтому это не составит для вас труда.
 
 set_1 = {1, 2, 3, 4, 5}
+
 set_2 = {3, 4, 5}
+
 print(set_1 - set_2)
+
 
 ![Меню](https://github.com/Kamui76/Prorammnaya_Ingeneria/blob/Tema_5/%D0%A1%D0%BA%D1%80%D0%B8%D0%BD%D1%8B%205%20%D0%BB%D0%B0%D0%B1%D0%B0%20%D0%9F%D0%98/%D0%97%D0%B0%D0%B4%D0%B0%D0%BD%D0%B8%D0%B51.png)
 - Данная программа выводит все элементы первого множества, которых нет во втором.
@@ -47,9 +50,13 @@ print(a)
 А вот что произойдет, если вы попробуете добавить новый элемент в frozenset():
 
 a = frozenset('SushiPivo')
+
 print(a)
+
 for i in range(1, 9):
+
     a.add(i)
+    
 print(a)
 
 ![Меню](https://github.com/Kamui76/Prorammnaya_Ingeneria/blob/Tema_5/%D0%A1%D0%BA%D1%80%D0%B8%D0%BD%D1%8B%205%20%D0%BB%D0%B0%D0%B1%D0%B0%20%D0%9F%D0%98/%D0%97%D0%B0%D0%B4%D0%B0%D0%BD%D0%B8%D0%B52.2.png)
@@ -58,11 +65,17 @@ print(a)
 3) На вход в программу поступает список (минимальной длиной 2 символа). Напишите программу, которая будет менять первый и последний элемент списка.
 
 def replace(input_list): 
+
     memory = input_list[0]
+    
     input_list[0] = input_list[-1] 
+    
     input_list[-1] = memory   
+    
     return input_list
+    
 print(replace(['S', 'U','R' ]))
+
 
 ![Меню](https://github.com/Kamui76/Prorammnaya_Ingeneria/blob/Tema_5/%D0%A1%D0%BA%D1%80%D0%B8%D0%BD%D1%8B%205%20%D0%BB%D0%B0%D0%B1%D0%B0%20%D0%9F%D0%98/%D0%97%D0%B0%D0%B4%D0%B0%D0%BD%D0%B8%D0%B53.png)
 - Данная программа меняет первый и последний элемент списка
@@ -70,6 +83,7 @@ print(replace(['S', 'U','R' ]))
 4) На вход в программу поступает список (минимальной длиной 10 символов). Напишите программу, которая выводит элементы с индексами от 2 до 6. В программе необходимо использовать “срез”.
 
 a = [531, 231, 532, 675, 12456, 3123, 3, 2, 51, 3]
+
 print(a[2:6])
 
 ![Меню](https://github.com/Kamui76/Prorammnaya_Ingeneria/blob/Tema_5/%D0%A1%D0%BA%D1%80%D0%B8%D0%BD%D1%8B%205%20%D0%BB%D0%B0%D0%B1%D0%B0%20%D0%9F%D0%98/%D0%97%D0%B0%D0%B4%D0%B0%D0%BD%D0%B8%D0%B54.png)
@@ -78,7 +92,9 @@ print(a[2:6])
 5) Иван задумался о поиске «бесполезного» числа, полученного из списка. Суть поиска в следующем: он берет произвольный список чисел, находит самое большое из них, а затем делит его на длину списка. Студент пока не придумал, где может пригодиться подобное значение, но ищет у вас помощи в реализации такой функции useless().
 
 def useless(lst): 
+
     return max(lst) / len(lst)
+    
 print(useless([41, 3125, 5,32, 41]))
 
 ![Меню](https://github.com/Kamui76/Prorammnaya_Ingeneria/blob/Tema_5/%D0%A1%D0%BA%D1%80%D0%B8%D0%BD%D1%8B%205%20%D0%BB%D0%B0%D0%B1%D0%B0%20%D0%9F%D0%98/%D0%97%D0%B0%D0%B4%D0%B0%D0%BD%D0%B8%D0%B55.png)
@@ -88,10 +104,15 @@ print(useless([41, 3125, 5,32, 41]))
 есть случайно составленный список супергероев, и вы должны определить кто из ребят будет каким супергероем. Необходимо использовать разделение списков.
 
 superheroes = ['Железный человек', 'Халк', 'Доктор Стрэндж']
+
 vasya, petya, denis = superheroes
+
 print('Вася - ', vasya)
+
 print('Петя - ', petya)
+
 print('Денис - ', denis)
+
 
 ![Меню](https://github.com/Kamui76/Prorammnaya_Ingeneria/blob/Tema_5/%D0%A1%D0%BA%D1%80%D0%B8%D0%BD%D1%8B%205%20%D0%BB%D0%B0%D0%B1%D0%B0%20%D0%9F%D0%98/%D0%97%D0%B0%D0%B4%D0%B0%D0%BD%D0%B8%D0%B56.png)
 - Данная программа определяет кто из ребят будет каким супергероем
@@ -100,9 +121,13 @@ print('Денис - ', denis)
 (минимальный элемент) и удалять его, только делать он это хочет не с людьми, а со списком. Помогите Вовочке с реализацией программы. Подсказка: для этого вам необходимо отсортировать список и удалить значение при помощи рор().
 
 a = [42, 42, 654, -4332, 1, 7, 432, 90]
+
 a.sort()
+
 print('отсортированный список:\n', a)
+
 a.pop()
+
 print('отсортированный список без наименьшего элемента:\n', a)
 
 ![Меню](https://github.com/Kamui76/Prorammnaya_Ingeneria/blob/Tema_5/%D0%A1%D0%BA%D1%80%D0%B8%D0%BD%D1%8B%205%20%D0%BB%D0%B0%D0%B1%D0%B0%20%D0%9F%D0%98/%D0%97%D0%B0%D0%B4%D0%B0%D0%BD%D0%B8%D0%B57.png)
@@ -112,14 +137,23 @@ print('отсортированный список без наименьшего
 
 
 from random import randint
+
 def list_maker():
+
     a = [randint(1, 100)] * randint(3, 10)    
+    
     return a
+    
 if __name__ == '__main__':
-    result =[]    
-    for i in range(randint(1,5)):   
-        result.append(list_maker())  
+
+    result =[]   
+    
+    for i in range(randint(1,5)):  
+    
+        result.append(list_maker()) 
+        
     print(result)
+    
 
 ![Меню](https://github.com/Kamui76/Prorammnaya_Ingeneria/blob/Tema_5/%D0%A1%D0%BA%D1%80%D0%B8%D0%BD%D1%8B%205%20%D0%BB%D0%B0%D0%B1%D0%B0%20%D0%9F%D0%98/%D0%97%D0%B0%D0%B4%D0%B0%D0%BD%D0%B8%D0%B58.png)
 - Данная программа создает несколько списков, состоящих минимум из 3-ёх, а максимум из 10 элементов и помещает их в один список
@@ -129,20 +163,34 @@ if __name__ == '__main__':
 2- <<Объект {X} является чистым супермножеством»
 3 - «Множества равны»
 
-def superset(set_1, set_2):   
-    if set_1 > set_2:       
+def superset(set_1, set_2):
+
+    if set_1 > set_2:  
+    
         print(f'объект {set_1} является чистым супермножеством')   
+        
     elif set_1 == set_2:       
+    
         print(f'множества равны')    
+        
     elif set_1 < set_2:       
+    
         print(f'объект {set_2} является чистым супермножеством')   
-    else:        
+        
+    else: 
+    
         print('супермножество не обнаружено')
+        
 if __name__ == '__main__':
+
     superset({2, 5, 3, 8}, {14, 27})
+    
     superset({2, 5, 3, 8}, {8, 8, 8, 8})
+    
     superset({3, 5}, {8, 8, 8, 8})
+    
     superset({90, 100}, {14, 27})
+    
     
 ![Меню](https://github.com/Kamui76/Prorammnaya_Ingeneria/blob/Tema_5/%D0%A1%D0%BA%D1%80%D0%B8%D0%BD%D1%8B%205%20%D0%BB%D0%B0%D0%B1%D0%B0%20%D0%9F%D0%98/%D0%97%D0%B0%D0%B4%D0%B0%D0%BD%D0%B8%D0%B59.png)
 - Данная прогграмма выводит в консоль одно из сообщений в зависимости от ситуации:
@@ -154,6 +202,7 @@ if __name__ == '__main__':
 Предположим, что вам нужно разобрать стопку бумаг, но нужно начать работу с нижней, "переверните стопку". Вам дан произвольный список. Представьте его в обратном порядке. Программа должна занимать не более двух строк в редакторе кода.
 
 my_list = [17, 6, 45, 3, 52]
+
 print(my_list[::-1])
 
 ![Меню](https://github.com/Kamui76/Prorammnaya_Ingeneria/blob/Tema_5/%D0%A1%D0%BA%D1%80%D0%B8%D0%BD%D1%8B%205%20%D0%BB%D0%B0%D0%B1%D0%B0%20%D0%9F%D0%98/%D0%97%D0%B0%D0%B4%D0%B0%D0%BD%D0%B8%D0%B510.png)
@@ -170,6 +219,7 @@ print(my_list[::-1])
 
 
 def main():
+
     check_list = [8734, 2345, 8201, 6621, 9999, 1234, 5678, 8201, 8888, 4321, 3365,
                   1478, 9865, 5555, 7777, 9998, 1111, 2222, 3333, 4444, 5556, 6666, 5410, 7778, 8889, 4445, 1439, 9604,
                   8201, 3365, 7502, 3016, 4928, 5837, 8201, 2643, 5017, 9682, 8530, 3250, 7193, 9051, 4506, 1987, 3365,
@@ -177,19 +227,33 @@ def main():
 
 
     def count_unique(lst):
+    
         return len(set(lst))
+        
     num_checks = len(check_list)
+    
     print("Количество выданных чеков:", num_checks)
+    
     unique_visitors = count_unique(check_list)
+    
     print("Количество разных людей, посетивших ресторан:", unique_visitors)
+    
     visit_counts = {}
+    
     for worker in set(check_list):
+    
         if worker not in visit_counts:
+        
             visit_counts[worker] = 0
+            
         visit_counts[worker] += check_list.count(worker)
+        
     most_frequent_worker = max(visit_counts, key=visit_counts.get)
+    
     print("Работник, посетивший ресторан больше всех раз:", most_frequent_worker)
+    
 if __name__ == "__main__":
+
     main()
 
 ![Меню](https://github.com/Kamui76/Prorammnaya_Ingeneria/blob/Tema_5/%D0%A1%D0%BA%D1%80%D0%B8%D0%BD%D1%8B%205%20%D0%BB%D0%B0%D0%B1%D0%B0%20%D0%9F%D0%98/%D0%A1%D0%B0%D0%BC%D0%97%D0%B0%D0%B4%D0%B0%D0%BD%D0%B8%D0%B51.png)
@@ -209,18 +273,30 @@ if __name__ == "__main__":
 
 
 def process_results(times):
+
     sorted_times = sorted(times)
+    
     best_three = sorted_times[:3]
+    
     worst_three = sorted_times[-3:]
+    
     print("Три лучшие результата:", best_three)
+    
     print("Три худшие результата:", worst_three)
+    
     starting_index = 10
+    
     print("Все результаты начиная с 10:")
+    
     for result in times[starting_index:]:
+    
         print(result)
+        
 if __name__ == "__main__":
+
     results = [10.2, 14.8, 19.3, 22.7, 12.5, 33.1, 38.9, 21.6, 26.4, 17.1, 30.2, 35.7, 16.9, 27.8, 24.5, 16.3, 18.7,
                31.9, 12.9, 37.4]
+               
     process_results(results)
 
 ![Меню](https://github.com/Kamui76/Prorammnaya_Ingeneria/blob/Tema_5/%D0%A1%D0%BA%D1%80%D0%B8%D0%BD%D1%8B%205%20%D0%BB%D0%B0%D0%B1%D0%B0%20%D0%9F%D0%98/%D0%A1%D0%B0%D0%BC%D0%97%D0%B0%D0%B4%D0%B0%D0%BD%D0%B8%D0%B52.png)
@@ -234,31 +310,55 @@ if __name__ == "__main__":
 one=[12, 25, 3, 48, 71] two = [5, 18, 40, 62, 98] three = [4, 21, 37, 56, 84]
 
 import math
+
 one = [12, 25, 3, 48, 71]
+
 two = [5, 18, 40, 62, 98]
+
 three = [4, 21, 37, 56, 84]
 
+
 max_ones = max(one)
+
 min_ones = min(one)
+
 max_twos = max(two)
+
 min_twos = min(two)
+
 max_threes = max(three)
+
 min_threes = min(three)
 
+
 a1 = max_ones
+
 b1 = max_twos
+
 c1 = max_threes
+
 a2 = min_ones
+
 b2 = min_twos
+
 c2 = min_threes
+
 def heron_area(a, b, c):
+
     s = (a + b + c) / 2
+    
     area = math.sqrt(s * (s - a) * (s - b) * (s - c))
+    
     return area
+    
 area1 = heron_area(a1, b1, c1)
+
 area2 = heron_area(a2, b2, c2)
+
 print("Площадь первого треугольника:", area1)
+
 print("Площадь второго треугольника:", area2)
+
 
 ![Меню](https://github.com/Kamui76/Prorammnaya_Ingeneria/blob/Tema_5/%D0%A1%D0%BA%D1%80%D0%B8%D0%BD%D1%8B%205%20%D0%BB%D0%B0%D0%B1%D0%B0%20%D0%9F%D0%98/%D0%A1%D0%B0%D0%BC%D0%97%D0%B0%D0%B4%D0%B0%D0%BD%D0%B8%D0%B53.png)
 - Данная программа выводит площади двух треугольников, составленные из максимальных и минимальных элементов полученных списков
@@ -270,28 +370,41 @@ print("Площадь второго треугольника:", area2)
 
 
 def main(grades):
+
     main = []
 
     for grade in grades:
+    
         if grade == 2:
+        
             continue
+            
         elif grade == 3:
+        
             main.append(4)
+            
         else:
+        
             main.append(grade)
 
     return main
 
 list1 = [2, 3, 4, 5, 3, 4, 5, 2, 2, 5, 3, 4, 3, 5, 4]
+
 list2 = [4, 2, 3, 5, 3, 5, 4, 2, 2, 5, 4, 3, 5, 3, 4]
+
 list3 = [5, 4, 3, 3, 4, 3, 3, 5, 5, 3, 3, 3, 3, 4, 4]
 
 updated_list1 = main(list1)
+
 updated_list2 = main(list2)
+
 updated_list3 = main(list3)
 
 print("Обновленный список 1:", updated_list1)
+
 print("Обновленный список 2:", updated_list2)
+
 print("Обновленный список 3:", updated_list3)
 
 
@@ -308,34 +421,54 @@ list_3 = [2, 2, 1, 2, 2, 5, 6, 7, 1, 3, 2, 2]
 {5, '5555', '555555', '55555', '555', '55', '5555555'}
 {'11', 1, 3, 2, 5, 6, '222222', '222', 7, '2222', '22222', '22'}
 
-```python
+
 def main(lst):
+
     result = set()
+    
     seen = set()
+    
 
     for num in lst:
+    
         if num in seen:
+        
             s = f'{num}{num}'
+            
             while s in seen:
+            
                 s += num
+                
             result.add(s)
+            
         else:
+        
             result.add(num)
+            
             seen.add(num)
+            
 
     return result
+    
 list_1 = [1, 1, 3, 3, 1]
+
 list_2 = [5, 5, 5, 5, 5, 5, 5]
+
 list_3 = [2, 2, 1, 2, 2, 5, 6, 7, 1, 3, 2, 2]
 
+
 result_1 = main(list_1)
+
 result_2 = main(list_2)
+
 result_3 = main(list_3)
 
 print("Множество 1:", result_1)
+
 print("Множество 2:", result_2)
+
 print("Множество 3:", result_3)
-```
+
 
 ![Меню](https://github.com/Kamui76/Prorammnaya_Ingeneria/blob/Tema_5/%D0%A1%D0%BA%D1%80%D0%B8%D0%BD%D1%8B%205%20%D0%BB%D0%B0%D0%B1%D0%B0%20%D0%9F%D0%98/%D0%A1%D0%B0%D0%BC%D0%97%D0%B0%D0%B4%D0%B0%D0%BD%D0%B8%D0%B55.png)
 - Данная программа изнатуральныхчисел формирует множества, но соблюдается правило: если какое-либо число повторяется, то оно преобразовывается в строку
